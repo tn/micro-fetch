@@ -1,7 +1,11 @@
 {
-  "name": "micro-fetch",
+  "name": "@nurislamov/micro-fetch",
   "version": "0.0.1",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tn/micro-fetch/issues"
+  },
+  "homepage": "https://github.com/tn/micro-fetch",
   "author": {
     "name": "tn",
     "email": "t.nurislamov@gmail.com",
