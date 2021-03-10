@@ -5,6 +5,13 @@ A tiny zero-dependencies http methods library.
 ### Requirements
 * `fetch` (native browser support or `node-fetch` like polyfill)
 
+### Get started
+```bash
+npm i @nurislamov/micro-fetch
+# or
+yarn add @nurislamov/micro-fetch
+```
+
 ### Typings
 ```ts
 interface MFOptions {
