@@ -43,7 +43,7 @@ post(path: string, body: BodyInit, options: Omit<RequestInit, 'method' | 'body'>
 
 ### Using
 ```ts
-import microFetch from 'micro-fetch'
+import { microFetch } from 'micro-fetch'
 
 /** ... */
 
