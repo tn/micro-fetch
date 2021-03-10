@@ -1,0 +1,51 @@
+{
+  "name": "micro-fetch",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "tn",
+    "email": "t.nurislamov@gmail.com",
+    "url": "https://nurislamov.com"
+  },
+  "main": "dist/micro-fetch.js",
+  "module": "dist/micro-fetch.mjs",
+  "typings": "dist/micro-fetch.d.ts",
+  "size-limit": [
+    {
+      "path": "dist/micro-fetch.js",
+      "limit": "400 B"
+    },
+    {
+      "path": "dist/micro-fetch.mjs",
+      "limit": "400 B"
+    }
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "jest && yarn eslint && yarn size",
+    "size": "size-limit",
+    "eslint": "eslint ."
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.10.1",
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "esbuild": "^0.9.0",
+    "eslint": "^7.21.0",
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
+    "rollup": "^2.41.0",
+    "rollup-plugin-dts": "^3.0.1",
+    "rollup-plugin-esbuild": "^3.0.0",
+    "size-limit": "^4.10.1",
+    "typescript": "^4.2.3"
+  }
+}
