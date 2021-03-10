@@ -1,6 +1,9 @@
-## Micro-Fetch
+## Micro-Fetch ![status](https://travis-ci.org/tn/micro-fetch.svg?branch=main)
 
 A tiny zero-dependencies http methods library.
+
+### Size
+`~300B` gzipped
 
 ### Requirements
 * `fetch` (native browser support or `node-fetch` like polyfill)
@@ -21,9 +24,9 @@ interface MFOptions {
 
 const { get } = microFetch(options: MFOptions)
 
-get(path: string, options: Omit<RequestInit, 'method' | 'body'>): Promise<unknown>
+get(path: string, options: Omit<RequestInit, 'method' | 'body'>): Promise<Response>
 
-post(path: string, body: BodyInit, options: Omit<RequestInit, 'method' | 'body'>): Promise<unknown>
+post(path: string, body: BodyInit, options: Omit<RequestInit, 'method' | 'body'>): Promise<Response>
 ```
 
 ### Default headers
